@@ -73,3 +73,36 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+header {
+  background-color: pink;
+}
+main {
+  background-color: palevioletred;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .top-container {
+  grid-column: 1 / 3;
+}
+
+main .article-container {
+  grid-column: 1/1;
+  grid-row: 2/4;
+}
+
+main .announcement-container {
+  grid-row: 2/3;
+}
+
+main .trend-container {
+  background-color: white;
+  grid-row: 3/4;
+}
