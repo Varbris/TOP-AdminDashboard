@@ -128,8 +128,10 @@ main .top-container {
 }
 .project-option-container .profile {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 4fr;
   line-height: 5vh;
+  justify-content: center;
+  align-items: center;
 }
 .profile .img-container {
   width: 100px;
@@ -138,8 +140,7 @@ main .top-container {
 
 main .article-container {
   grid-column: 1/2;
-  padding: 20px 10px;
-  background: aqua;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20px repeat(auto-fit, minmax(100px, 40%));
