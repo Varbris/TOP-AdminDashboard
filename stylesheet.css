@@ -82,6 +82,32 @@ body {
 header {
   background-color: pink;
 }
+header nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6fr;
+}
+nav .nav-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.brand-ico {
+  width: 7vw !important;
+  height: 7vh !important;
+}
+.icon-size {
+  width: 5vw;
+  height: 5vh;
+  display: inline-block;
+}
+.admin-logo p {
+  display: inline;
+}
+.nav-menu .nav-menu-1 {
+  list-style-type: none;
+}
+
 main {
   background-color: antiquewhite;
   display: grid;
