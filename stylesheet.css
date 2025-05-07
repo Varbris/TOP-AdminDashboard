@@ -74,23 +74,38 @@ h6 {
   isolation: isolate;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/font/Roboto/Roboto-VariableFont_wdth\wght.ttf);
+}
+@font-face {
+  font-family: "NotoSerifJP";
+  src: url(assets/font/Noto_Serif_JP/NotoSerifJP-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(assets/font/Inter/Inter-VariableFont_opsz-wght.ttf);
+}
+
 body {
+  font-family: "Inter", "NotoSerifJP", "Roboto";
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
 
 header {
   background-color: pink;
+  font-weight: 700;
 }
 header nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 2fr 7fr;
   justify-content: start;
 }
 .icon-size {
-  width: 5vw;
-  height: 5vh;
+  width: 3vw;
+  height: 3vh;
   display: inline-block;
 }
 .admin-logo {
@@ -116,7 +131,7 @@ header nav {
 }
 .nav-menu-1 li {
   display: grid;
-  grid-template-columns: minmax(50px, 1fr) 2fr;
+  grid-template-columns: minmax(50px, 1fr) 4fr;
 }
 .nav-menu-1 li a {
   color: white;
@@ -128,7 +143,7 @@ header nav {
 }
 .nav-menu-2 li {
   display: grid;
-  grid-template-columns: minmax(50px, 1fr) 2fr;
+  grid-template-columns: minmax(50px, 1fr) 4fr;
 }
 .nav-menu-2 li a {
   color: white;
