@@ -227,8 +227,20 @@ main .announcement-container {
   margin-top: 1vh;
   align-self: center;
 }
+
 .card-option .project-button {
-  width: 2vw;
+  background-color: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+.card-option .project-button:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+  border-radius: 50%;
+}
+.card-option .project-button:active {
+  background-color: rgba(100, 100, 100, 0.6);
+  border-radius: 50%;
 }
 .card-option ul {
   list-style-type: none;
