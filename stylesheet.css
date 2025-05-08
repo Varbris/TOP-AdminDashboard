@@ -303,6 +303,12 @@ main .article-container {
   gap: 10px;
   padding: 2rem;
 }
+.article-container .card {
+  border-top: 1px solid rgba(0, 0, 0, 0.356);
+  border-right: 1px solid rgba(0, 0, 0, 0.356);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+  border-left: 7px solid #9ec6f3;
+}
 .article-container h3 {
   grid-column: 1/3;
 }
@@ -310,8 +316,19 @@ main .article-container {
 main .trend-container {
   grid: 2/3;
 }
-main .announcement-container {
+main .side-article .announcement-container {
   grid-column: 2/3;
+}
+.announcement-container .card-body ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+  padding: 20px;
+  list-style-type: none;
+}
+.announcement-container .card-body ul li {
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
 }
 main .side-article {
   padding: 2rem;
@@ -335,15 +352,11 @@ main .side-article {
 .card {
   background-color: white;
   width: 25vw;
-  height: 25vh;
   margin: 5px;
   padding: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.356);
-  border-right: 1px solid rgba(0, 0, 0, 0.356);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.356);
-  border-left: 7px solid #9ec6f3;
   border-radius: 10px;
-
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
