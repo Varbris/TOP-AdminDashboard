@@ -330,7 +330,10 @@ main .side-article {
   height: 25vh;
   margin: 5px;
   padding: 20px;
-  border: 2px solid black;
+  border-top: 1px solid rgba(0, 0, 0, 0.356);
+  border-right: 1px solid rgba(0, 0, 0, 0.356);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+  border-left: 7px solid #9ec6f3;
   border-radius: 10px;
 
   display: grid;
