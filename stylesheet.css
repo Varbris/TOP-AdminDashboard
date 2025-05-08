@@ -174,7 +174,7 @@ main {
   background-color: rgba(255, 237, 134, 0.253);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: max(200px) 3fr;
 }
 
 main .top-container {
@@ -291,7 +291,7 @@ main .article-container {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20px repeat(auto-fit, minmax(100px, 40%));
+  grid-template-rows: 20px repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
   padding: 2rem;
 }
@@ -327,6 +327,7 @@ main .side-article {
 .card {
   background-color: white;
   width: 25vw;
+  height: 25vh;
   margin: 5px;
   padding: 20px;
   border: 2px solid black;
