@@ -249,6 +249,8 @@ main .top-container {
 .top-container .project-option-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
 .project-option-container .project-button ul {
   display: grid;
@@ -261,7 +263,17 @@ main .top-container {
   border-radius: 7px;
   padding: 5px 40px;
   margin: 0 6px;
+  cursor: pointer;
 }
+
+.project-button ul button:hover {
+  background-color: rgba(0, 255, 255, 0.315);
+}
+
+.project-button ul button:active {
+  background-color: rgb(63, 124, 124);
+}
+
 .project-option-container .profile {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -270,8 +282,8 @@ main .top-container {
   align-items: center;
 }
 .profile .img-container {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 main .article-container {
@@ -344,6 +356,7 @@ main .side-article {
   border: none;
   outline: none;
   background: none;
+  cursor: pointer;
 }
 .card-option .project-button:hover {
   background-color: rgba(100, 100, 100, 0.1);
